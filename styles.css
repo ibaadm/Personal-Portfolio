@@ -94,10 +94,20 @@ main{
 
 @media screen and (max-width: 577px) {
   main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: 0;
   }
 
-  figure a img {
-    margin-right: 20px;
+  main figure {
+    margin: 20px 0;
+    width: 80%;
+    max-width: 400px;
+  }
+
+  main figure img {
+    margin-right: 0;
+    width: 150px;
   }
 }
