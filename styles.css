@@ -92,3 +92,12 @@ main{
   }
 }
 
+@media screen and (max-width: 577px) {
+  main {
+    margin-left: 0;
+  }
+
+  figure a img {
+    margin-right: 20px;
+  }
+}
