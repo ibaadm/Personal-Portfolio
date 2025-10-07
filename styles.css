@@ -1,0 +1,94 @@
+body{
+  margin: 0px;
+  background-color: rgb(231, 201, 29);
+  color:black;
+  font-family: 'Chakra Petch';
+}
+
+nav{
+
+  .house{
+    height:20px;
+    margin:3px 2px 0px 2px;
+  }
+
+  ul{
+  list-style-type: none;
+  background-color: rgb(70, 34, 0);
+  text-align: center;
+  overflow: hidden;
+  margin:0px;
+  padding:12px;
+  }
+
+  ul li{
+    float:left;
+  }
+
+  ul li a{
+    padding:10px 12px 10px 12px;
+    color:white;
+    text-decoration: none;
+    font-family: 'Bungee';
+    font-size:20px;
+  }
+
+  ul li a:hover{
+    background-color: rgb(123, 61, 3);
+  }
+
+  @media screen and (max-width:577px){
+    .homemargin{
+      margin-bottom:20px;
+    }
+  }
+}
+
+
+
+header{
+  background-color: rgb(182, 135, 18);
+  text-align: center;
+
+  div{
+    max-width: 600px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 10px;
+  }
+
+  div h1{
+    font-size:60px;
+    transition: color 1s;
+    color:black;
+    margin:auto;
+    width: 250px;
+    text-shadow: 2px 2px rgb(97, 97, 97);
+  }
+}
+
+main{
+  display:flex;
+
+  section{
+    width:80%;
+    margin:auto;
+    font-size:18px;
+  }
+
+  .home-section{
+    width:600px;
+    margin:40px 40px 40px 13vw;
+  }
+
+  .home-large img{
+    width:300px;
+    margin-right:150px;
+  }
+
+  .home-small img{
+    visibility: hidden;
+    width:1px;
+  }
+}
+

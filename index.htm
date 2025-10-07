@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <title>Ibaad | Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href='https://fonts.googleapis.com/css?family=Chakra Petch|Bungee' rel='stylesheet'>
+  <base target="_self">
+  <meta charset="UTF-8">
+  <meta name="description" content="Ibaad's Portfolio">
+  <meta name="keywords" content="Highschool, Portfolio, Computer Science">
+  <meta name="author" content="Ibaad">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="scripts.js"></script>
+
+  <style>
+    @media screen and (max-width:1050px){
+      main{
+        display:block;
+
+        .home-section{
+          width:350px;
+          margin:auto;
+        }
+
+        .home-large{
+          visibility:hidden;
+          width:0px;
+        }
+
+        .home-small img{
+          visibility:visible;
+          width:300px;
+        }
+
+        .home-small{
+          width:300px;
+          margin:auto;
+        }
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li class="homemargin"><a href="index.htm">
+        <img src="images/house.png" alt="Home" class="house"></a></li>
+      <li class="homemargin"><a href="about.htm">About</a></li>
+      <li class="homemargin"><a href="projects.htm">Projects</a></li>
+      <li class="homemargin"><a href="qualities.htm">Qualities</a></li>
+      <li><a href="contact.htm">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div style="padding: 25px 0px 65px 0px; margin-bottom:20px;">
+      <h1 class="changing" style="color:rgb(152, 0, 0);">Welcome!</h1>
+      <p style="margin:10px; font-size:20px;"><strong>
+        I'm a computer science enthusiast pursuing a career in technology.
+        I'm currently doing my A Levels in Saudi Arabia.
+        I enjoy coding, weightlifting and nature. 
+      </strong></p>
+    </div>
+  </header>
+
+  <main>
+    <figure class="home-small">
+      <img src="images/jeep.jpg" alt="Picture of me">
+    </figure>
+    <section class="home-section">
+      <p>Some of my current goals are:</p>
+      <ul>
+        <li>Getting A*s in all of my A levels<br>
+        (Maths, Further Maths, Biology, Chemistry)</li>
+        <li>Achieving a 100kg bench</li>
+        <li>Earning money through game development</li>
+        <li>Going on more hikes</li>
+      </ul>
+    </section>
+    <figure class="home-large">
+      <img src="images/jeep.jpg" alt="Picture of me">
+    </figure>
+  </main>
+</body>
+</html>
