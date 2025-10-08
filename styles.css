@@ -92,22 +92,70 @@ main{
   }
 }
 
-@media screen and (max-width: 577px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
+/* Contact page layout: center rows and make images responsive */
+.contact-main{
+  display:flex;
+  flex-direction:column;
+  align-items:center; /* center the figure blocks */
+  padding: 20px; /* small padding so content doesn't touch edges */
+  box-sizing: border-box;
+  gap: 36px; /* uniform vertical spacing between figure rows */
+}
+
+.contact-row{
+  display:flex;
+  gap: 36px; /* space between two icons */
+  justify-content:center;
+  align-items:center;
+  width:auto;
+  max-width:960px; /* allow rows to be wider on desktop so icons can be larger */
+  margin:0 auto; /* center the row horizontally; vertical spacing handled by .contact-main gap */
+}
+
+.contact-row img{
+  /* scale between 160px and 300px depending on viewport, staying fluid */
+  width: clamp(160px, 12vw, 300px);
+  height: auto;
+  display: block;
+}
+
+/* make icons even larger on wide desktop screens */
+@media screen and (min-width:1200px){
+  .contact-row{
+    gap:48px;
   }
 
-  main figure {
-    margin: 20px 0;
-    width: 80%;
-    max-width: 400px;
+  .contact-row img{
+    width: 260px;
+  }
+}
+
+@media screen and (max-width:420px){
+  .contact-row{
+    gap:12px;
+    max-width:100%;
+    padding:0 12px; /* reduce side padding on very small screens */
   }
 
-  main figure img {
-    margin-right: 0;
-    width: 150px;
+  .contact-row img{
+    width:40vw; /* images scale with viewport width on very small screens */
+    max-width:140px;
+  }
+}
+
+@media screen and (max-width:360px){
+  /* when stacked, make internal gap match the vertical gap between rows so spacing is uniform */
+  .contact-main{
+    gap:36px;
+  }
+
+  .contact-row{
+    flex-direction:column;
+    gap:36px;
+  }
+
+  .contact-row img{
+    width:60vw;
+    max-width:200px;
   }
 }
